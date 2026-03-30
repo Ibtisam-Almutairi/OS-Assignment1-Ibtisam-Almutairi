@@ -32,16 +32,24 @@ Document your development process as you work on the assignment. Add entries sho
 
 ## Your Development Log:
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+### Entry 1 - [March 29, 2026 – 2:00 AM]
+**What I did**: Created a GitHub account with my university email, forked the repository, renamed it, and edited the SchedulerSimulation.java file to include my student ID.
 
 **Details**: 
+- Signed up for a GitHub account using my university email.
+- Forked the assignment repository to my GitHub account.
+- Renamed the forked repository to distinguish it from the original.
+- Opened the SchedulerSimulation.java file in GitHub’s web editor.
+- Added my student ID to the appropriate section of the file.
+- Committed the changes directly on GitHub to save my work.
 
 **Challenges**: 
+Understanding the correct order of forking, renaming, and editing files directly on GitHub.
 
 **Solution**: 
-
+Re-read the assignment file for guidance, followed the README instructions carefully, and used GitHub’s web interface to edit and commit the file.
 **Time spent**: 
+40 minutes
 
 ---
 
