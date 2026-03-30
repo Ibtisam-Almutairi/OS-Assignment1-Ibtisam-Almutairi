@@ -134,10 +134,13 @@ Approximately two and a half hours
 
 ## Summary
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [12 hours]
 
 **Most challenging part**: 
+Modifying Features 1 and 2 and rewriting Feature 3 correctly on GitHub, while ensuring all calculations and outputs were accurate.
 
 **Most interesting learning**: 
+Working on this assignment allowed me to try new approaches, such as creating commits properly and working on the code in a separate, organized way. It also taught me how to effectively use GitHub for managing, editing, and committing code, which improved my workflow and confidence in version control.
 
 **What I would do differently next time**: 
+I would create a clear plan for implementing the features and solve them step by step, testing each feature individually before moving to the next. I would also follow a structured workflow on GitHub to avoid mistakes and save time.
