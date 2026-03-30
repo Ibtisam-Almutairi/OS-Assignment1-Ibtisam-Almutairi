@@ -9,7 +9,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Write your answer here. Discuss specific concepts like thread creation, thread states, how threads execute concurrently, what surprised you, etc.]
+[Before this assignment, I only knew about threads from lectures, but actually working with them made things much clearer. I learned that threads are not separate programs—they share memory and need to be managed carefully. When I added the context switch counter, I had to figure out exactly when one process stops and another starts, which helped me understand why context switching affects performance. I also saw how threads change states using Thread.start() and Thread.join() in my code, watching processes go from waiting to running and back. The waiting time feature taught me that timing is important, and even small mistakes in the calculation gave wrong results. Using Thread.sleep() to simulate execution showed me how we can test scheduling behavior safely. Overall, this assignment made me realize that multithreading is not just about running multiple things at once, but about managing them fairly so that no process is ignored.]
 
 ---
 
