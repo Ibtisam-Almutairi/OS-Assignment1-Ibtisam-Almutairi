@@ -101,17 +101,22 @@ Adjusted the print statements to include all required values, implemented the wa
 Approximately three and a half hours
 ---
 
-### Entry 5 - [Date and Time]
+### Entry 5 - [March 30, 2026 – 2:30 PM]
 **What I did**: 
+While working on Feature 3, I reviewed the code and realized it was mistakenly linked to Feature 1. I removed Feature 3, adjusted Features 1 and 2, and then rewrote Feature 3. I tested Process Priority, Context Switch Counter, and Waiting Time Tracking to ensure everything worked correctly.
 
 **Details**: 
-
+- Reviewed the existing code and identified that Feature 3 was incorrectly linked to Feature 1.
+- Removed the incorrect implementation of Feature 3.
+- Adjusted Features 1 (Process Priority) and 2 (Context Switch Counter) to ensure correctness.
+- Rewrote Feature 3 (Waiting Time Tracking) from scratch.
+- Tested all three features to verify calculations and correct output.
 **Challenges**: 
-
+Modifying Features 1 and 2 and rewriting Feature 3 directly on GitHub was tricky and took longer than expected.
 **Solution**: 
-
+Carefully reviewed and corrected Features 1 and 2, rewrote Feature 3, verified all calculations, and ensured the output was clear and accurate.
 **Time spent**: 
-
+Approximately two and a half hours
 ---
 
 ### Entry 6 - [Optional - Date and Time]
