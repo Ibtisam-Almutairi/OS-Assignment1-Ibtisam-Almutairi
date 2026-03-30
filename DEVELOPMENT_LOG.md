@@ -69,17 +69,18 @@ Modified the print statement inside the addProcessToQueue method to include the 
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**: 
-
+### Entry 3 - [March 30, 2026 – 3:30 AM]
+**What I did**: I worked on implementing Feature (2) Context Switch Counter, I added a static counter variable that increments every time a new process starts running in the scheduler loop.
 **Details**: 
-
+- Added a static counter variable to track context switches.
+- Determined the correct place in the scheduler loop to increment the counter.
+- Incremented the counter each time a new process is selected from the queue and begins execution.
 **Challenges**: 
-
+Initially, I was unsure about the correct position to increment the counter to accurately represent each context switch.
 **Solution**: 
-
+Placed the increment statement right after selecting the next process from the queue and before starting its thread. This ensures the counter increases correctly every time a process begins execution.
 **Time spent**: 
-
+Approximately an hour and a half
 ---
 
 ### Entry 4 - [Date and Time]
