@@ -30,14 +30,7 @@ class Process implements Runnable {
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
 
-    // Constructor to initialize the process with name, burst time, and time quantum
-    public Process(String name, int burstTime, int timeQuantum) {
-        this.name = name;
-        this.burstTime = burstTime;
-        this.timeQuantum = timeQuantum;
-        this.remainingTime = burstTime; // Initially, remaining time is equal to the burst time
-    }
-    // FEATURE 1: Add priority field (integer 1-5, where 5 is highest)
+     // FEATURE 1: Add priority field (integer 1-5, where 5 is highest)
     private int priority; // Priority of the process (1-5, 5 being highest)
     // Constructor to initialize the process with name, burst time, time quantum, and priority
     // FEATURE 1: Added priority parameter to constructor
@@ -160,11 +153,6 @@ class Process implements Runnable {
 }
 
 public class SchedulerSimulation {
-
-    // FEATURE 2: Static counter for context switches
-    // Incremented each time a new process starts running
-    private static int contextSwitchCount = 0;
-    
     public static void main(String[] args) {
         // ⚠️ IMPORTANT: Put your student ID here to seed the random number generator
         // This makes your output unique to you - DO NOT forget to change this!
@@ -243,9 +231,6 @@ public class SchedulerSimulation {
         while (!processQueue.isEmpty()) {
             // Get the next thread from the queue (FIFO)
             Thread currentThread = processQueue.poll(); // Dequeues the next thread
-
-             // FEATURE 2: Increment context switch counter when a new process starts running
-            contextSwitchCount++;
             
             // Print the current process queue (list of process IDs in the queue)
             System.out.println(Colors.BOLD + Colors.MAGENTA + "┌─ Ready Queue " + "─".repeat(65) + Colors.RESET);
@@ -304,24 +289,6 @@ public class SchedulerSimulation {
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
 
-        // FEATURE 2: Display total context switches at the end of simulation
-        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
-                          "╔════════════════════════════════════════════════════════════════════════════════╗" + 
-                          Colors.RESET);
-        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET + 
-                          Colors.BG_BLUE + Colors.BRIGHT_WHITE + Colors.BOLD + 
-                          "                        SCHEDULER STATISTICS                                     " + 
-                          Colors.RESET + Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET);
-        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
-                          "╠════════════════════════════════════════════════════════════════════════════════╣" + 
-                          Colors.RESET);
-        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET + 
-                          Colors.CYAN + "  🔄 Total Context Switches: " + Colors.RESET + 
-                          Colors.BRIGHT_CYAN + String.format("%-52s", contextSwitchCount) + 
-                          Colors.BOLD + Colors.BRIGHT_YELLOW + "║" + Colors.RESET);
-        System.out.println(Colors.BOLD + Colors.BRIGHT_YELLOW + 
-                          "╚════════════════════════════════════════════════════════════════════════════════╝" + 
-                          Colors.RESET + "\n");
     }
     
     // Method to add a process to the queue and map, while printing a "ready" message
@@ -336,11 +303,11 @@ public class SchedulerSimulation {
         
         // Map the thread to the process, so we can track the process associated with each thread
         processMap.put(thread, process);
-         // FEATURE 1: Updated output message to include priority
-        // Example: "P1 (Priority: 4) enters the ready queue..."
-        
-        // Print a message indicating the process has entered the ready queue
+
+        // FEATURE 1: Updated output message to include priority
+                 // Example: "P1 (Priority: 4) enters the ready queue..."
         System.out.println(Colors.BLUE + "  ➕ " + Colors.BOLD + Colors.CYAN + process.getName() + 
+                          Colors.RESET + Colors.YELLOW + " (Priority: " + process.getPriority() + ")" + 
                           Colors.RESET + Colors.BLUE + " added to ready queue" + Colors.RESET + 
                           " │ Burst time: " + Colors.YELLOW + process.getBurstTime() + "ms" + 
                           Colors.RESET);
