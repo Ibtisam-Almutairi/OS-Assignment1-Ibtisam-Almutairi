@@ -25,7 +25,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe your problem-solving approach. Did you read documentation? Ask for help? Debug systematically? What resources did you use? What strategies worked?]
+[I overcame the challenges by reviewing the code carefully and understanding how each feature interacts with the others. I removed the incorrect implementation of Feature 3 and corrected Features 1 and 2 step by step. I tested each feature individually before combining them to ensure calculations were correct. I also used GitHub’s web interface to carefully edit and commit changes, which helped me keep track of my progress. Following a structured workflow made it easier to identify and fix mistakes. Taking the time to plan and verify each part improved the overall accuracy and output of the program.]
 
 ---
 
