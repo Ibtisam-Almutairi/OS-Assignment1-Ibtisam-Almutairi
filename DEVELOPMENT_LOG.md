@@ -53,16 +53,19 @@ Re-read the assignment file for guidance, followed the README instructions caref
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**: 
+### Entry 2 - [March 30, 2026 – 12:00 AM]
+**What I did**: I worked on implementing Feature (1) Process Priority. I added a priority field to the Process class, updated the constructor to include it, and generated random priority values (1–5) in the main method. I also displayed the priority when each process enters the ready queue.
 
 **Details**: 
-
+- Added a priority field to the Process class.
+- Updated the constructor to accept the priority value.
+- Generated random priority values (1–5) in the main method when creating processes.
+- Attempted to display the priority when processes enter the ready queue.
 **Challenges**: 
-
+The priority value was not showing in the output because I forgot to update the print statement after adding the new field.
 **Solution**: 
-
-**Time spent**: 
+Modified the print statement inside the addProcessToQueue method to include the priority value. After updating it correctly, the priority appeared with each process in the output.
+**Time spent**: Approximately two and a half hours
 
 ---
 
