@@ -85,15 +85,20 @@ Approximately an hour and a half
 
 ### Entry 4 - [Date and Time]
 **What I did**: 
-
+I worked on displaying the final results and implementing Feature (3) Waiting Time Tracking, I created a table that shows each process’s information, including Process Name, Burst Time, Priority, and Waiting Time, I also tracked and updated each process’s waiting time and calculated the Average Waiting Time for all processes.
 **Details**: 
-
+- Added waiting time tracking to each process.
+- Updated the waiting time each time a process waited in the queue.
+- Created a table to display each process’s information clearly.
+- Included Process Name, Burst Time, Priority, and Waiting Time in the table.
+- Calculated the Average Waiting Time by summing all waiting times and dividing by the number of processes.
+- Ensured the output was formatted neatly and all values were displayed correctly.
 **Challenges**: 
-
+Had difficulty organizing the output format and making sure all values, including the updated waiting times, appeared correctly in the table.
 **Solution**: 
-
+Adjusted the print statements to include all required values, implemented the waiting time updates for each process, and properly formatted the table. Calculated the average waiting time by summing the waiting times and dividing by the number of processes.
 **Time spent**: 
-
+Approximately three and a half hours
 ---
 
 ### Entry 5 - [Date and Time]
