@@ -17,7 +17,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Describe the specific challenge. Was it understanding the code? Implementing a feature? Using Git? Explain what made it difficult and how it relates to the course concepts.]
+[The most challenging part was modifying Features 1 and 2 while rewriting Feature 3 correctly. Since the features interact with each other, a small mistake could affect the output of all processes. Working directly on GitHub added another layer of difficulty because I had to carefully commit changes and make sure I did not lose my work. Tracking waiting time and context switches simultaneously required careful attention to detail. It was also time-consuming to test each feature and ensure the results matched expectations.]
 
 ---
 
