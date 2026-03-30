@@ -33,7 +33,7 @@ Answer the following questions about your learning experience. Each answer shoul
 
 **Your Answer:**
 
-[Give specific examples from real applications you use (web browsers, games, mobile apps, etc.). Explain why threads are useful in those scenarios. Connect to what you learned in this assignment.]
+[Multithreading can be used in many real-world applications where several tasks need to run at the same time. For example, web servers use threads to handle many user requests at once, which makes them faster. Video games and graphics programs use threads to handle rendering, physics, and user input at the same time. Even regular programs like text editors or spreadsheets use threads to keep the interface smooth while doing background work. Working on this assignment helped me understand how threads interact and why it’s important to plan and manage them carefully. Multithreading makes programs faster, more efficient, and more responsive to users.]
 
 ---
 
