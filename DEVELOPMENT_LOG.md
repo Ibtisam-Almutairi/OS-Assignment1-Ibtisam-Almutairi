@@ -83,7 +83,7 @@ Placed the increment statement right after selecting the next process from the q
 Approximately an hour and a half
 ---
 
-### Entry 4 - [Date and Time]
+### Entry 4 - [March 30, 2026 – 11:15 AM]
 **What I did**: 
 I worked on displaying the final results and implementing Feature (3) Waiting Time Tracking, I created a table that shows each process’s information, including Process Name, Burst Time, Priority, and Waiting Time, I also tracked and updated each process’s waiting time and calculated the Average Waiting Time for all processes.
 **Details**: 
