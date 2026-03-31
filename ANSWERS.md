@@ -11,7 +11,11 @@ Answer all 4 questions with detailed explanations. Each answer should be **3-5 s
 
 **Your Answer:**
 
-[Write your answer here. Consider: What is a process? What is a thread? How do they differ in terms of memory, resources, creation overhead? Why are threads more suitable for this simulation?]
+[A process is an independent program in execution that has its own memory space, resources, and system state, while a thread is a smaller unit of execution that exists within a process and shares the same memory and resources with other threads in that process. One key difference is that processes do not share memory by default, whereas threads share the same address space, making communication between threads much faster and easier. Another difference is creation overhead: creating a new process is more expensive and slower compared to creating a thread, which is lightweight.
+
+In this assignment, threads were used instead of processes because the scheduler simulation requires frequent switching and interaction between tasks. Using threads allows all simulated processes to share data structures such as the processQueue and processMap in SchedulerSimulation.java, which simplifies communication and coordination. For example, each Process is executed using a Thread (new Thread(process)), and the scheduler manages them efficiently using start() and join() without the overhead of inter-process communication.
+
+Therefore, threads are more suitable for this simulation because they provide faster context switching, lower resource usage, and easier data sharing, which are essential for implementing a responsive Round Robin scheduling system.]
 
 ---
 
