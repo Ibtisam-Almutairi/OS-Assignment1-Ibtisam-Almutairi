@@ -98,10 +98,10 @@ This re-queueing behavior is important for fairness because it ensures that no s
 ## Summary
 
 **Key concepts I understood through these questions:**
-1. 
-2. 
-3. 
+1. I understood the difference between a thread and a process, especially how threads share memory and are faster to create, which makes them more suitable for our simulation.
+2. I learned how Round-Robin scheduling works using a fixed time quantum, and that if a process doesn’t finish, it gets added back to the ready queue after a context switch so other processes can run.
+3. I also understood the thread lifecycle (New, Runnable, Running, Waiting, Terminated) and when a thread moves between these states using methods like start(), sleep(), and join().
 
 **Concepts I need to study more:**
-1. 
-2. 
+1. I still need to understand thread synchronization better, especially how to avoid problems when multiple threads share the same data.
+2. I also want to learn more about other CPU scheduling algorithms and how they compare to Round-Robin.
