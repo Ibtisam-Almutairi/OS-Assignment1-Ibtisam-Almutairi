@@ -57,17 +57,17 @@ This re-queueing behavior is important for fairness because it ensures that no s
 
 **Your Answer:**
 
-[Write your answer here. For each state, explain when P1 enters that state during the simulation. Use your understanding of the code to trace through the lifecycle.]
+[In this simulation, each process such as P1 is executed using a thread and goes through the states: New, Runnable, Running, Waiting, and Terminated. These states are connected to specific method calls in the code such as Thread.start(), Thread.join(), and Thread.sleep(). The lifecycle can be observed clearly as the scheduler repeatedly selects P1 and executes it using the Round-Robin algorithm.]
 
-1. **New**: [When is P1 in New state?]
+1. **New**: [P1 is in the New state when the thread is first created using new Thread(process) inside the addProcessToQueue() method. At this point, the thread exists in memory but has not started execution yet. It is simply prepared and placed into the ready queue waiting for scheduling.]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [P1 becomes Runnable when the scheduler selects it from the ready queue and calls Thread.start(). This makes the thread ready to run and eligible for CPU scheduling by the JVM. At this stage, it is waiting for the CPU to assign it execution time.]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [P1 enters the Running state when the JVM starts executing the run() method after Thread.start() is called. During this state, the process actively uses the CPU to execute its time quantum. This is shown in the output when we see messages like “P1 executing quantum [4000ms]”.]
 
-4. **Waiting**: [When/why would P1 be Waiting?]
+4. **Waiting**: [P1 enters the Waiting state when Thread.sleep() is called inside the run() method to simulate execution time. During this time, the thread is paused and not using the CPU. Also, the main scheduler thread calls currentThread.join(), which causes it to wait until P1 completes its quantum before continuing.]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [P1 reaches the Terminated state when it completes all its execution and its run() method finishes. This happens when the remaining time becomes 0 after several cycles of execution. In the output, this is shown by the message “P1 finished execution!”, indicating that the thread has ended.]
 
 ---
 
