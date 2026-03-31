@@ -77,21 +77,21 @@ This re-queueing behavior is important for fairness because it ensures that no s
 
 **Your Answer:**
 
-### Example 1: [Name of application/scenario]
+### Example 1: [Web Server]
 
 **Description**: 
-[Describe the real-world scenario or application]
+[In a web server, multiple users can request pages or data at the same time. Each request is handled as a separate thread, so the server can process many requests without waiting for just one to finish. For example, if ten users open the website at once, each one gets a share of CPU time.]
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+[Round-Robin gives each request the same amount of time (time quantum) on the CPU, preventing long requests from delaying others. This ensures fairness and responsiveness, so every user receives a response in a reasonable time. Just like in our simulation, each thread gets a turn to run, and if it doesn’t finish in its quantum, it goes back to the ready queue until its next turn]
 
-### Example 2: [Name of application/scenario]
+### Example 2: [Multiplayer Online Game Server]
 
 **Description**: 
-[Describe the real-world scenario or application]
+[In a multiplayer online game, the server handles each player as a separate thread for actions like movement, attacks, or updates. The server must update the game state for all players continuously so everyone sees the same situation at the same time.]
 
 **Why Round-Robin works well here**: 
-[Explain why Round-Robin scheduling is suitable. Consider fairness, responsiveness, predictability, etc.]
+[Round-Robin ensures that each player gets an equal share of CPU time, so no player has an advantage over others. This maintains fairness and predictability, because each player’s actions are updated periodically using a fixed time quantum. Just like in our simulation, if a thread doesn’t complete its time slice, it goes back to the queue and waits for its next turn, keeping the game running smoothly for all players.]
 
 ---
 
