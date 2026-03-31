@@ -25,15 +25,29 @@ Therefore, threads are more suitable for this simulation because they provide fa
 
 **Your Answer:**
 
-[Write your answer here. Describe the specific behavior - where does the process go? When does it run again? Give an example from your actual program output showing a process that was re-queued.]
+[In Round-Robin scheduling, if a process does not finish within its assigned time quantum, it is preempted (stopped temporarily) and moved to the end of the ready queue. This allows other processes to get CPU time before the unfinished process runs again. The process will later be scheduled again when it reaches the front of the queue in the next cycle.
+
+This behavior can be clearly seen in my program output. For example, process P1 does not finish within the time quantum of 4000ms, so it yields the CPU and is added back to the ready queue.]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+[▶️ P1 executing quantum [4000ms] 
+  ⏸️ P1 completed quantum 4000ms │ Overall progress: 43%
+     Remaining time: 5290ms
+  ↻ P1 yields CPU for context switch
+
+  ➕ P1 (Priority: 3) added to ready queue │ Burst time: 9290ms
+
+[...]
+Ready Queue:
+[P3 → P4 → P5 → P6 → P7 → P8 → P9 → P10 → P11 → P12 → P13 → P14 → P15 → P16 → P1]
+]
 ```
 
 **Explanation of example:**
-[Explain what's happening in the output snippet you pasted]
+[In this output, P1 executes for one time quantum (4000ms), but it still has 5290ms remaining, so it cannot finish. The scheduler performs a context switch, and P1 is placed at the end of the ready queue. This means other processes (like P3, P4, etc.) get their turn before P1 runs again.
+
+This re-queueing behavior is important for fairness because it ensures that no single process can monopolize the CPU. Every process gets a fair share of CPU time in cycles, which is especially important when there are many processes, as shown in the output with 16 processes.]
 
 ---
 
